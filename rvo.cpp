@@ -10,6 +10,6 @@ int main() {
 }
 
 /*
-g++ rov.cpp -o rov.o                         // prints nothing.
-g++ -fno-elide-constructors rov.cpp -o rov.o // prints "foo copy constructor called".
+g++ rvo.cpp -o rvo.o                         // prints nothing.
+g++ -fno-elide-constructors rvo.cpp -o rvo.o // prints "foo copy constructor called".
 */

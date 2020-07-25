@@ -23,6 +23,7 @@ void safe_increment() {
   std::cout << "safe inc: " << cnt.load() << std::endl;
 }
 
+// g++ atomic_safe_increment.cpp -pthread -o atomic_safe_increment
 int main() {
   std::cout << "***unsafe increments:***" << std::endl;
   for (size_t i=0; i < 10; i++) {
